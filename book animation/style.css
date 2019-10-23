@@ -1,0 +1,31 @@
+.btn-outline-success
+{
+	background-color: green;
+
+}
+.btn-outline-success:hover
+{background-color: grey;
+}
+
+.navbar
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.jumbotron
+{
+
+	font-family: 'Montserrat', sans-serif;
+
+}
+.jumbotron-fluid
+{
+	
+}
+.container.main
+{
+	display: inline-flex;
+}
+body
+{
+	background-color: #1e6cc7;
+}

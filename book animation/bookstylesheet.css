@@ -1,0 +1,63 @@
+body
+{
+background-color: black;	
+}
+.book
+{
+	position: relative;
+  margin-left: 5px;
+
+}
+.cover
+{
+	background-color: brown;
+	transform: rotateY(0deg);
+	width: 2.5rem;
+	height: 4rem;
+
+}
+.page{
+	top: 0.25rem;
+	left: 0.45rem;
+	background-color: #F8ECC2;
+	transform: rotateY(0deg);
+	width: 1rem;
+	height: 3.5rem;
+}
+.cover, .page {
+  position: absolute;
+  padding: 1rem;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.cover.turn {
+  animation: bookCover 3s forwards;
+}
+.page.turn {
+  animation: bookOpen 3s forwards;
+}
+.page:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.page:nth-of-type(2) {
+  animation-delay: 0.33s
+}
+.page:nth-of-type(3) {
+  animation-delay: 0.66s;
+
+  animation-iteration-count: infinite;
+
+}
+@keyframes bookOpen {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 999;}
+}
+@keyframes bookCover {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 1;}
+}

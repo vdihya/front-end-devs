@@ -1,0 +1,28 @@
+h2{
+	color: grey;
+	font: kaiti;
+	letter-spacing: .85em;
+	font-size: 50px;
+	text-align: center;
+    margin: 0 auto;
+    opacity: 0.5;
+    text-align: center;
+ 	padding: 50px 100px 100px 100px; 
+
+}
+ body{
+ 	align-content: center;
+ 	margin: 0 auto;
+
+ 	background: linear-gradient(to left, grey, snow);
+ }
+ .bd{
+ 	
+    text-align: center;
+ 	width: 100%;
+ 	 }
+ 	 h3{
+ 	 	text-align: center;
+ 	 	color: grey;
+ 	 	letter-spacing: .2em;
+ 	 }
